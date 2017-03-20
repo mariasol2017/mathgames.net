@@ -1,0 +1,29 @@
+body{
+    background-color: #000000;
+}
+.tituloprincipal{
+    color:#80f010;
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+#container{
+    text-align: center;
+}
+.subtitulo{
+    color:#101ef0;
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    font-size: 40px;
+    text-align: left;
+}
+.formulario{
+    font-family: 'Share', cursive, sans-serif;
+    color: #F1873E;
+    font-size: 25px;
+    text-align: justify;
+}
+.crearcuenta{
+    color:#F0101A;
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    font-size: 30px;
+}

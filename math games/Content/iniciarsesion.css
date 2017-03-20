@@ -1,0 +1,23 @@
+body{
+    background-color: #000000;
+}
+.tituloprincipal{
+    color:#80f010;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+#container{
+    text-align: left;
+}
+.parrafo{
+    font-size: 20px;
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: bold;
+    color: #101EF0;
+    text-align: left;
+}
+.ingresar{
+    font-size: 35px;
+    font-family: 'Patrick Hand', sans-serif;
+}

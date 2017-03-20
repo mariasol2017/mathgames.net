@@ -1,0 +1,32 @@
+body{
+    background-color: #000000;
+}
+.tituloprincipal{
+    color:#80f010;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+.iniciarsesion{
+    font-family: 'Patrick Hand', cursive;
+    color: #10F0ED;
+    font-size: 35px;
+    align: right;
+}
+#container{
+    text-align: center;
+}
+.boton{
+    font-size: 40px;
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: bold;
+    color: #F0101A;
+}
+.salir{
+    font-size: 40px;
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: bold;
+    color: #101EF0;
+    text-align: right;
+    margin: 40px;
+}
