@@ -29,7 +29,15 @@ namespace math_games.Controllers
 
         public ActionResult IniciarSesion()
         {
-            return View("../Views/Home/pantallainiciarsesion.cshtml");
+            return View();
+        }
+        public ActionResult registrarse()
+        {
+            return View();
+        }
+        public ActionResult UsuarioDocente()
+        {
+            return View("../Views/Home/pantallausuariodocente.html");
         }
     }
 }

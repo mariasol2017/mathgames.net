@@ -237,9 +237,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\inicio general.html.html" />
-    <None Include="Views\Home\pantallainiciarsesion.cshtml" />
+    <None Include="Views\Home\IniciarSesion.cshtml" />
     <None Include="Views\Home\index.cshtml" />
-    <Content Include="Views\pantallaregistrarse.html" />
+    <None Include="Views\Home\registrarse.cshtml" />
     <Content Include="Views\pantallausuariodocente.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
