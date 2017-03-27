@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">      
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/pantallaregistrarse.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
+    <title>Math Games / Registrarse</title>
+</head>
+<body>
+    <h1 class="tituloprincipal">Math Games</h1>
+    <h2 class="subtitulo">Registrarse</h2>
+    <div id="container">
+        <div class="formulario">
+            <form action="@Url.Action("Registrar","Home")">
+                <label>Tipo de usuario</label>
+                <select name="Tipo">
+                    <option value="alumno">Alumno</option>
+                    <option value="profesor">Profesor</option>
+                </select>
+                <br>
+                <br>
+                <label>Nombre y Apellido</label>
+                <input name="Nombre" type="text">
+                <br>
+                <label>Número de documento</label>
+                <input name="DNI" type="text">
+                <br>
+                <label>Edad</label>
+                <input name="Edad" type="number">
+                <br>
+                <label>E-mail</label>
+                <input name="Mail" type="email">
+                <br>
+                <label>Contraseña</label>
+                <input name="password" type="password">
+                <br>
+                <label>Confirmar contraseña</label>
+                <input type="password">
+                <div class="crearcuenta">
+                    <input type="submit" value="Crear Cuenta" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

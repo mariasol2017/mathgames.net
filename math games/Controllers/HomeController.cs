@@ -1,4 +1,5 @@
-﻿using System;
+﻿using math_games.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,13 +32,31 @@ namespace math_games.Controllers
         {
             return View();
         }
-        public ActionResult registrarse()
+
+        public ActionResult CrearCuenta()
         {
             return View();
         }
-        public ActionResult UsuarioDocente()
+
+        public ActionResult registrar(string Tipo, string Nombre, string DNI, string Edad, string Mail, string Contraseña)
         {
-            return View("../Views/Home/pantallausuariodocente.html");
+            Usuario User = new Usuario();
+            User.Tipo = Tipo;
+            User.Nombre = Nombre;
+            User.DNI = DNI;
+            User.Edad = Edad;
+            User.Mail = Mail;
+            User.Contraseña = Contraseña;
+
+            if(Tipo == "alumno"){
+                return View("~/Views/Home/usuarioalumno.cshtml");
+            }
+            else
+            {
+                return View("~/Views/Home/usuariodocente.cshtml");
+            }
         }
+
+ 
     }
 }
