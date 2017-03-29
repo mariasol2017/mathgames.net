@@ -14,20 +14,7 @@ namespace math_games.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
+        
         public ActionResult IniciarSesion()
         {
             return View();
@@ -38,7 +25,20 @@ namespace math_games.Controllers
             return View();
         }
 
-        public ActionResult registrar(string Tipo, string Nombre, string DNI, string Edad, string Mail, string Contraseña)
+        public ActionResult Elegirprofesor()
+        {
+            return View();
+        }
+
+        public ActionResult Pregunta()
+        {
+            return View();
+        }
+
+
+
+
+        public ActionResult IniciarRegistro(string Tipo, string Nombre, string DNI, string Edad, string Mail, string Password)
         {
             Usuario User = new Usuario();
             User.Tipo = Tipo;
@@ -46,17 +46,36 @@ namespace math_games.Controllers
             User.DNI = DNI;
             User.Edad = Edad;
             User.Mail = Mail;
-            User.Contraseña = Contraseña;
+            User.Contraseña = Password;
 
-            if(Tipo == "alumno"){
+            if(User.Tipo == "Alumno"){
                 return View("~/Views/Home/usuarioalumno.cshtml");
             }
             else
             {
                 return View("~/Views/Home/usuariodocente.cshtml");
             }
+                       
+
         }
 
- 
+        public ActionResult IniciarLogueo(string Tipo)
+        {
+            Usuario UserLogueado = new Usuario();
+            UserLogueado.Tipo = (string)Tipo;
+
+
+            if (UserLogueado.Tipo == "Alumno")
+            {
+                return View("~/Views/Home/usuarioalumno.cshtml");
+            }
+            else
+            {
+                return View("~/Views/Home/usuariodocente.cshtml");
+            }
+            
+
+        }
+
     }
 }

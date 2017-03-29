@@ -13,13 +13,13 @@
     
     <div id="container">
     <h2 class="subtitulo">Tipo de usuario</h2>
-        <select name="Tipos de usuarios">
-            <option value="Usuario">Alumno</option>
-            <option value="Usuario">Profesor</option>
-            <option value="Usuario">Otros</option>
-        </select>
-          <form class="form-signin">
-          <div class="parrafo">
+       
+     <form class="form-signin" action="@Url.Action("IniciarLogueo", "Home")">
+         <select name="Tipo" id="TipoUsuario">
+             <option value="Alumno">Alumno</option>
+             <option value="Profesor">Profesor</option>
+         </select>
+            <div class="parrafo">
         <h2 class="form-signin-heading"><font><font>Iniciar sesión</font></font></h2>
         <label for="inputEmail" class="sr-only"><font><font>Dirección de correo electrónico</font></font></label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Dirección de E-mail" required="" autofocus="">
@@ -34,7 +34,7 @@
         <div class="ingresar">
         <button class="btn btn-lg btn-primary btn-block" type="submit"><font><font>INGRESAR</font></font></button>
         </div>
-      </form>
+  </form>
       </div>
     <script src="../Scripts/jquery.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
